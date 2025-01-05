@@ -3,91 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Content Attack - Yadu</title>
+    <title>MR_DIABLO Resource Library: The 5 Most Common Website Attacks</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('path_to_deadpool_image.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .intro {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .attack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .attack img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .attack div {
+            flex: 1;
+        }
+        h2 {
+            color: #333;
+            font-size: 28px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .prevention {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .prevention ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .prevention li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="#slide1">Introduction</a></li>
-                <li><a href="#slide2">Types of Attacks</a></li>
-                <li><a href="#slide3">Prevention</a></li>
-                <li><a href="#slide4">Case Studies</a></li>
-                <li><a href="#slide5">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Safeguard Your Digital Fortress with MR_DIABLO</h1>
     </header>
 
-    <section id="slide1">
-        <div class="slide">
-            <h1>Cyber Content Attacks</h1>
-            <p>An overview of the growing threat landscape in the digital world.</p>
-            <a href="#slide2" class="cta-button">Learn More</a>
+    <section class="intro">
+        <p>Welcome to MR_DIABLO's resource library, your trusted guide to understanding and defending against the most common threats targeting websites. Stay informed, stay secure.</p>
+    </section>
+
+    <section class="attack">
+        <h2>1. SQL Injection</h2>
+        <img src="images/sql-injection.jpg" alt="SQL Injection diagram">
+        <div>
+            <p><strong>What is SQL Injection?</strong> SQL injection occurs when attackers exploit vulnerabilities in a website’s database layer. By inserting malicious SQL queries into input fields, attackers can bypass authentication systems, access, modify, or delete sensitive data stored in a database.</p>
+            <p><strong>How Does It Work?</strong> Attackers manipulate input fields (like login forms) to inject harmful SQL commands. If the website doesn’t properly sanitize user input, the malicious code is executed by the database, granting unauthorized access.</p>
+            <p><strong>Prevention Tips:</strong> Use parameterized queries, keep your database software updated, and implement strict access controls.</p>
         </div>
     </section>
 
-    <section id="slide2">
-        <div class="slide">
-            <h2>Types of Cyber Attacks</h2>
-            <ul>
-                <li>Phishing</li>
-                <li>Ransomware</li>
-                <li>SQL Injection</li>
-                <li>Denial of Service (DoS)</li>
-            </ul>
-            <a href="#slide3" class="cta-button">Next</a>
+    <section class="attack">
+        <h2>2. Cross-Site Scripting (XSS)</h2>
+        <img src="images/xss-attack.jpg" alt="XSS attack example">
+        <div>
+            <p><strong>What is XSS?</strong> Cross-site scripting is a vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. These scripts can steal cookies, session tokens, or other sensitive information, and they can also redirect users to malicious websites.</p>
+            <p><strong>How Does It Work?</strong> Attackers inject JavaScript into input fields. When another user views the page, the script runs in their browser, exploiting their session and performing actions on their behalf.</p>
+            <p><strong>Prevention Tips:</strong> Sanitize user inputs, implement Content Security Policy (CSP) headers, and use frameworks like React or Angular that automatically handle XSS protection.</p>
         </div>
     </section>
 
-    <section id="slide3">
-        <div class="slide">
-            <h2>Prevention Techniques</h2>
-            <p>Learn how to safeguard your systems against cyber threats:</p>
-            <ul>
-                <li>Use strong passwords</li>
-                <li>Enable two-factor authentication</li>
-                <li>Regularly update software</li>
-                <li>Conduct security audits</li>
-            </ul>
-            <a href="#slide4" class="cta-button">Next</a>
+    <section class="attack">
+        <h2>3. Malware Infections</h2>
+        <img src="images/malware-infection.jpg" alt="Malware infection alert">
+        <div>
+            <p><strong>What is Malware?</strong> Malware refers to software designed to harm or exploit a website, including viruses, worms, ransomware, and spyware. Once malware infects a website, it can spread to visitors' devices, steal data, or cause significant damage.</p>
+            <p><strong>Signs of Infection:</strong> Unexplained changes in content, slow performance, or unauthorized redirects.</p>
+            <p><strong>Prevention Tips:</strong> Keep software up-to-date, use antivirus tools, and perform regular backups.</p>
         </div>
     </section>
 
-    <section id="slide4">
-        <div class="slide">
-            <h2>Case Studies</h2>
-            <p>Explore real-world examples of cyber content attacks and their impacts:</p>
-            <ul>
-                <li>Example 1: [Case Study Details]</li>
-                <li>Example 2: [Case Study Details]</li>
-                <li>Example 3: [Case Study Details]</li>
-            </ul>
-            <a href="#slide5" class="cta-button">Contact Us</a>
+    <section class="attack">
+        <h2>4. Denial-of-Service (DoS) Attacks</h2>
+        <img src="images/dos-attack.jpg" alt="DoS attack diagram">
+        <div>
+            <p><strong>What is a DoS Attack?</strong> A Denial-of-Service attack aims to overwhelm a website’s server with traffic, causing it to become slow or unavailable. Distributed Denial-of-Service (DDoS) attacks are even more potent, involving multiple sources.</p>
+            <p><strong>How Does It Work?</strong> Attackers flood the website with excessive requests, consuming server resources and making it inaccessible to legitimate users.</p>
+            <p><strong>Prevention Tips:</strong> Use a CDN, implement rate limiting, and deploy Web Application Firewalls (WAFs).</p>
         </div>
     </section>
 
-    <section id="slide5">
-        <div class="slide">
-            <h2>Contact Us</h2>
-            <form id="contactForm" method="POST" action="/submit_form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
+    <section class="attack">
+        <h2>5. Phishing Scams</h2>
+        <img src="images/phishing-scam.jpg" alt="Phishing email example">
+        <div>
+            <p><strong>What is Phishing?</strong> Phishing is a social engineering attack where attackers impersonate legitimate organizations to steal sensitive information like usernames, passwords, and credit card details.</p>
+            <p><strong>How Does It Work?</strong> Attackers send emails or create fake websites that look like trusted services. These emails contain links to fraudulent login pages designed to steal user credentials.</p>
+            <p><strong>Prevention Tips:</strong> Verify communications, use two-factor authentication (2FA), and educate users on phishing risks.</p>
         </div>
+    </section>
+
+    <section class="prevention">
+        <h2>Cyber Attack Prevention Methods</h2>
+        <p>To protect your website from common cyber threats, follow these essential prevention strategies:</p>
+        <ul>
+            <li><strong>Regular Software Updates:</strong> Keep your website's software, plugins, and dependencies up to date to patch known vulnerabilities.</li>
+            <li><strong>Use Strong Authentication:</strong> Implement two-factor authentication (2FA) to secure access to sensitive areas.</li>
+            <li><strong>Web Application Firewall (WAF):</strong> Deploy a WAF to filter out malicious traffic and block suspicious requests.</li>
+            <li><strong>Data Encryption:</strong> Use SSL/TLS encryption to protect sensitive data in transit.</li>
+            <li><strong>Backups:</strong> Regularly back up your website to ensure you can recover from attacks like ransomware.</li>
+            <li><strong>Security Audits:</strong> Conduct regular security audits to identify and fix vulnerabilities before attackers exploit them.</li>
+        </ul>
     </section>
 
     <footer>
-        <p>&copy; 2025 Yadu's Website. All Rights Reserved.</p>
+        <p>At MR_DIABLO, we believe that knowledge is the first line of defense against cyber threats. Stay vigilant, keep your website updated, and take proactive steps to secure your digital presence.</p>
+        <p>Contact us today at: <strong>+919747636994</strong></p>
+        <p><a href="contact.html" class="button">Contact Us for More Information</a></p>
     </footer>
+
 </body>
 </html>
