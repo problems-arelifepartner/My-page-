@@ -11,6 +11,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Check if the username and password match
     if ($username === $valid_username && $password === $valid_password) {
+        // Set cookies for username and password for 1 hour
+        setcookie("username", $username, time() + 3600, "/"); // 1 hour expiry
+        setcookie("logged_in", "true", time() + 3600, "/");
+
         $_SESSION["logged_in"] = true;
         header("Location: welcome.php");
         exit();
