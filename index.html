@@ -3,171 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Tech</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Orbitron', sans-serif;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: #ffffff;
-            overflow-x: hidden;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background: rgba(0, 0, 0, 0.5);
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        header h1 {
-            font-size: 2rem;
-            color: #00ffcc;
-        }
-
-        header nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #ffffff;
-            transition: color 0.3s;
-        }
-
-        header nav a:hover {
-            color: #00ffcc;
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: url('https://source.unsplash.com/1600x900/?technology,futuristic') no-repeat center center/cover;
-        }
-
-        .hero h2 {
-            font-size: 3rem;
-            margin: 0;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        .hero button {
-            margin-top: 20px;
-            padding: 10px 30px;
-            font-size: 1rem;
-            background: #00ffcc;
-            color: #000;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .hero button:hover {
-            transform: scale(1.1);
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 50px;
-            background: rgba(0, 0, 0, 0.8);
-        }
-
-        .feature {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s;
-        }
-
-        .feature:hover {
-            transform: translateY(-10px);
-        }
-
-        .feature h3 {
-            color: #00ffcc;
-        }
-
-        .feature p {
-            color: #cccccc;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            color: #ffffff;
-        }
-
-        footer a {
-            color: #00ffcc;
-            text-decoration: none;
-        }
-    </style>
+    <title>Cyber Content Attack - Yadu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>FutureTech</h1>
         <nav>
-            <a href="#features">Features</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#slide1">Introduction</a></li>
+                <li><a href="#slide2">Types of Attacks</a></li>
+                <li><a href="#slide3">Prevention</a></li>
+                <li><a href="#slide4">Case Studies</a></li>
+                <li><a href="#slide5">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Welcome to the Future</h2>
-        <p>Experience cutting-edge technology like never before. Dive into the world of innovation and possibilities.</p>
-        <button onclick="scrollToFeatures()">Explore Features</button>
+    <section id="slide1">
+        <div class="slide">
+            <h1>Cyber Content Attacks</h1>
+            <p>An overview of the growing threat landscape in the digital world.</p>
+            <a href="#slide2" class="cta-button">Learn More</a>
+        </div>
     </section>
 
-    <section id="features" class="features">
-        <div class="feature">
-            <h3>AI Integration</h3>
-            <p>Seamlessly integrate AI into your daily life.</p>
+    <section id="slide2">
+        <div class="slide">
+            <h2>Types of Cyber Attacks</h2>
+            <ul>
+                <li>Phishing</li>
+                <li>Ransomware</li>
+                <li>SQL Injection</li>
+                <li>Denial of Service (DoS)</li>
+            </ul>
+            <a href="#slide3" class="cta-button">Next</a>
         </div>
-        <div class="feature">
-            <h3>Quantum Computing</h3>
-            <p>Revolutionizing the way we process information.</p>
+    </section>
+
+    <section id="slide3">
+        <div class="slide">
+            <h2>Prevention Techniques</h2>
+            <p>Learn how to safeguard your systems against cyber threats:</p>
+            <ul>
+                <li>Use strong passwords</li>
+                <li>Enable two-factor authentication</li>
+                <li>Regularly update software</li>
+                <li>Conduct security audits</li>
+            </ul>
+            <a href="#slide4" class="cta-button">Next</a>
         </div>
-        <div class="feature">
-            <h3>Virtual Reality</h3>
-            <p>Immerse yourself in a completely new reality.</p>
+    </section>
+
+    <section id="slide4">
+        <div class="slide">
+            <h2>Case Studies</h2>
+            <p>Explore real-world examples of cyber content attacks and their impacts:</p>
+            <ul>
+                <li>Example 1: [Case Study Details]</li>
+                <li>Example 2: [Case Study Details]</li>
+                <li>Example 3: [Case Study Details]</li>
+            </ul>
+            <a href="#slide5" class="cta-button">Contact Us</a>
         </div>
-        <div class="feature">
-            <h3>Smart Devices</h3>
-            <p>Connect and control your world with ease.</p>
+    </section>
+
+    <section id="slide5">
+        <div class="slide">
+            <h2>Contact Us</h2>
+            <form id="contactForm" method="POST" action="/submit_form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 FutureTech. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        <p>&copy; 2025 Yadu's Website. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        function scrollToFeatures() {
-            document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
 </body>
 </html>
