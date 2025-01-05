@@ -1,13 +1,3 @@
-<?php
-session_start();
-
-// Check if the user is logged in using cookies
-if (!isset($_COOKIE["logged_in"]) || $_COOKIE["logged_in"] != "true") {
-    header("Location: login.html");
-    exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +8,6 @@ if (!isset($_COOKIE["logged_in"]) || $_COOKIE["logged_in"] != "true") {
 <body>
     <h1>Welcome to MR_DIABLO's Resource Library</h1>
     <p>You are successfully logged in!</p>
-    <a href="logout.php">Logout</a>
+    <a href="logout.html">Logout</a>
 </body>
 </html>
