@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #00ffcc;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #00ffcc;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?technology,futuristic') no-repeat center center/cover;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 10px 30px;
+            font-size: 1rem;
+            background: #00ffcc;
+            color: #000;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .hero button:hover {
+            transform: scale(1.1);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature h3 {
+            color: #00ffcc;
+        }
+
+        .feature p {
+            color: #cccccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: #ffffff;
+        }
+
+        footer a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FutureTech</h1>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to the Future</h2>
+        <p>Experience cutting-edge technology like never before. Dive into the world of innovation and possibilities.</p>
+        <button onclick="scrollToFeatures()">Explore Features</button>
+    </section>
+
+    <section id="features" class="features">
+        <div class="feature">
+            <h3>AI Integration</h3>
+            <p>Seamlessly integrate AI into your daily life.</p>
+        </div>
+        <div class="feature">
+            <h3>Quantum Computing</h3>
+            <p>Revolutionizing the way we process information.</p>
+        </div>
+        <div class="feature">
+            <h3>Virtual Reality</h3>
+            <p>Immerse yourself in a completely new reality.</p>
+        </div>
+        <div class="feature">
+            <h3>Smart Devices</h3>
+            <p>Connect and control your world with ease.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FutureTech. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        function scrollToFeatures() {
+            document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
