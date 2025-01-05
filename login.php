@@ -1,30 +1,21 @@
 <?php
-// login.php
+session_start();
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+// Define your credentials (for simplicity, using hardcoded values)
+$valid_username = "admin";
+$valid_password = "password123"; // In a real-world scenario, use hashed passwords
 
-    // Connect to the database
-    $conn = new mysqli('localhost', 'username', 'password', 'database_name');
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    // Store the user information (for demonstration purposes, use hashing for passwords)
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-    
-    // Insert user into the database
-    $sql = "INSERT INTO users (username, password) VALUES ('$username', '$hashed_password')";
-    
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
+    // Check if the username and password match
+    if ($username === $valid_username && $password === $valid_password) {
+        $_SESSION["logged_in"] = true;
+        header("Location: welcome.php");
+        exit();
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "<p>Invalid username or password. Please try again.</p>";
     }
-
-    // Close the connection
-    $conn->close();
 }
 ?>
