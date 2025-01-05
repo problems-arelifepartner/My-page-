@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-if (!isset($_SESSION["logged_in"])) {
+// Check if the user is logged in using cookies
+if (!isset($_COOKIE["logged_in"]) || $_COOKIE["logged_in"] != "true") {
     header("Location: login.html");
     exit();
 }
@@ -20,4 +21,3 @@ if (!isset($_SESSION["logged_in"])) {
     <a href="logout.php">Logout</a>
 </body>
 </html>
-
